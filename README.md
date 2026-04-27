@@ -1,4 +1,4 @@
-# 
+#  Web page of Quenn World Tour 2026
 
 ## 📖 Description
 
@@ -11,7 +11,7 @@ The system is modularized into multiple files to ensure clean code structure, re
 
 ## 🚀 Project Structure
 
-
+- The page is divided into about the band, the gallery and the schedules, in the about the band section there is the history of the band along with some photos of them, in the schedule section there is a table with the different schedules of the tour, and finally in the gallery there are several photos of the band and its leader along with a section of songs at the bottom of the page
 
 ## ⚙️ Tecnologys used
 
