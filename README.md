@@ -2,10 +2,7 @@
 
 ## 📖 Description
 
-This is a Command Line Interface (CLI) Inventory Management System built in Python.  
-It allows users to manage products efficiently by performing CRUD operations (Create, Read, Update, Delete), as well as saving and loading data using CSV files.
-
-The system is modularized into multiple files to ensure clean code structure, readability, and scalability.
+This is a web page create to promotioned a Queen World Tour 2026
 
 ---
 
