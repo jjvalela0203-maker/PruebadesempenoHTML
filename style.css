@@ -134,6 +134,7 @@ body {
 }
 
 .page-footer {
+    font-family: "Libre Baskerville", serif;
     width: 100%;
     height: auto;
     background-color: var(--color-main);
@@ -276,6 +277,76 @@ figcaption {
     border-radius: 12px;
     margin-bottom: 10px;
 }
+
+.Songs {
+    border-top: 2px solid var(--color-main);
+    background-color: var(--color-font);
+    padding: 2rem;
+    box-shadow: 5px 15px rgba(0,0,0,0.1);
+}
+h2 {
+    font-family: 'Monserrat', Tahoma, Geneva, Verdanaimes, serif;
+    color: var(--color-font-sec);
+}
+
+h3 {
+    color: var(--color-font-sec);
+    font-size: var(--text-small);
+}
+.cancion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.contenedor-portada {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+}
+.portada {
+    position: relative;
+    z-index: 2;
+    margin-top: 0;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3); 
+    display: block; 
+}
+.discogirando{
+    position: absolute;
+    margin-left: 80px;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    z-index: 1;
+}
+/* Animación de giro para el disco de la portada del album */
+@keyframes girar {
+    from { transform: translate(-50%, -50%) rotate(0deg); }
+    to { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+/* Animación de giro simple para el logo en la barra lateral */
+@keyframes girar-simple {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Aplicar la animación de giro al disco solo cuando se esté reproduciendo la canción */
+.discogirando.playing {
+    animation: girar 3s linear infinite;
+}
+
+.foto-album {
+    width: 100%;
+    height: 200px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;   
+    margin-bottom: 10px;
+}
+
 
 /* Responsive Design */
 @media (max-width: 600px) {
